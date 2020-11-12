@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
+                <!--style="@style/edit_profile"-->
+                <ImageView
+                    android:id="@+id/ivNewProfile"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/image_border"
+                    android:padding="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etShortBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_edit_input"
+                    android:gravity="center"
+                    android:hint="Short bio"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvProfileEditName"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/etBio"
+                android:gravity="bottom"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etBio"
+                android:layout_toRightOf="@id/tvProfileEditName"
+                android:background="@drawable/profile_edit_input"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvProfileEditPhone"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvProfileEditName"
+                android:gravity="bottom"
+                android:text="Phone No."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfileEditName"
+                android:layout_toRightOf="@id/tvProfileEditPhone"
+                android:background="@drawable/profile_edit_input"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/tvProfileEditAddress"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvProfileEditPhone"
+                android:gravity="bottom"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProfileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfileEditPhone"
+                android:layout_toRightOf="@id/tvProfileEditAddress"
+                android:background="@drawable/profile_edit_input"
+                android:inputType="text"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

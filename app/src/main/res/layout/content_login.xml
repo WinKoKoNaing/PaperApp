@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/svSignIn"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/AppThemeNoToolBar"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/loginlogo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_style_login"
+        android:text="Login with phone number"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tsLarge"
+        android:onClick="loginWithPhone"
+        android:gravity="center"/>
+
+    <include layout="@layout/content_facebook_button"/>
+
+    <!-- layout for sign up text view-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="@dimen/tsMedium" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sign up"
+            android:onClick="signWithPhone"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="@dimen/tsExtraLarge"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

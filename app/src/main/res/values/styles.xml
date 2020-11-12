@@ -1,0 +1,172 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+        <item name="android:textViewStyle">@style/CrimsonTextViewStyle</item>
+        <item name="android:divider">@color/dividerColor</item>
+
+        <item name="windowBackground">@color/white</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="preferenceTheme">@style/PrefTheme</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+
+    </style>
+
+    // the whole fonts
+
+    <style name="CrimsonTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+    </style>
+    <!-- Secondary Theme -->
+    <style name="AppThemeSecondary" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowBackground">@color/white</item>
+        <item name="preferenceTheme">@style/PrefTheme</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppThemeNoToolBar" parent="AppTheme">
+        <item name="windowBackground">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="preferenceTheme">@style/PrefTheme</item>
+    </style>
+
+
+    <style name="MyDialogTheme">
+
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tsLarge</item>
+        <item name="android:background">@drawable/button_style_facebook</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="CardStyle">
+
+        <item name="android:clickable">true</item>
+
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    // for Profile Activity
+
+    <style name="TextAppearance.MyApp.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+    // for Profile edit Activity
+
+    <style name="edit_profile">
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+    </style>
+    // profile
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    // spinner color
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    // tab layout
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">20sp</item>
+    </style>
+    // menu color
+
+    <style name="myCustomMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    // loading
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+
+    /*  APP THEME DARK ---------------------------------------- */
+
+
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="windowBackground">@color/windowBack</item>
+        <item name="android:divider">@color/dividerColor</item>
+        <item name="cardBackgroundColor">@color/backCardColor</item>
+        <item name="preferenceTheme">@style/PrefThemeDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="background">@color/windowBack</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    /*  APP THEME DARK ---------------------------------------- */
+
+    <style name="PrefTheme" parent="AppTheme">
+        <item name="windowBackground">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="PrefThemeDark" parent="AppThemeDark">
+        <item name="windowBackground">@color/windowBack</item>
+        <item name="background">@color/windowBack</item>
+    </style>
+
+
+    <style name="ActivityTheme.Primary.Base.Dark"    parent="Theme.AppCompat.NoActionBar">
+        <item name="primaryTextColor">@color/white</item>
+        <item name="secondaryTextColor">@color/white</item>
+        <item name="cardBackgroundColor">#28292e</item>
+        <item name="dividerColor">@color/dividerColor</item>
+        <item name="android:windowBackground">@color/windowBack</item>
+        <item name="preferenceTheme">@style/ActivityTheme.Primary.Base.Dark</item>
+    </style>
+
+
+
+</resources>

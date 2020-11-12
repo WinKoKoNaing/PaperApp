@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pecake.paper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".helpers.MApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Auth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main" />
+        <activity
+            android:name=".activities.ActivityCreatePost"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.ActivityPostDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pecake.paper.Main" />
+        </activity>
+        <activity android:name=".activities.ActivityProfile" />
+        <activity android:name=".activities.ActivitySetting" />
+        <activity
+            android:name=".activities.ActivityEditPost"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity
+            android:name=".activities.ProfileEditActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.ActivityFeedDetail" />
+        <activity android:name=".activities.ActivityCategoryDetail" />
+        <activity
+            android:name=".activities.ActivityEditFeed"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.ActivityUserCategory" />
+        <activity android:name=".activities.CategoryPostCreate" />
+        <activity android:name=".activities.ActivityCategoryEdit" />
+        <activity android:name=".activities.ActivityUserPosts" />
+        <activity android:name=".activities.UserCategories"></activity>
+        <activity android:name=".activities.ActivityPostCategoryDetail"/>
+        <activity android:name=".activities.ActivityEditCategoryPost"/>
+    </application>
+
+</manifest>

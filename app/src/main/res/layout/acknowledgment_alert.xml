@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:theme="@style/AppThemeDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ေက်းဇူးတင္လႊာ"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/tsXXLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="- Paper mobile application အသံုုးျပဳၾကသူတစ္ဦးခ်င္းစီအား ေက်းဇူးအထူးတင္ရွိပါသည္"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tsExtraLarge"
+        android:layout_marginTop="@dimen/aboutTextMargin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="- App တြင္ အသံုုးျပဳထားေသာ third party library တစ္ခုုခ်င္းစီအတြက္ ေက်းဇူးအထူးတင္ရွိပါသည္"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tsExtraLarge"
+        android:layout_marginTop="@dimen/aboutTextMargin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="- Student exhibition ျဖစ္ေျမာက္ေရးအတြက္ အဘက္ဘက္မွ ေဆာင္ရြက္ ကူညီ ေပးႀကသူမ်ားအား ေက်းဇူးအထူးတင္ရွိပါသည္"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tsExtraLarge"
+        android:layout_marginTop="@dimen/aboutTextMargin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/aboutTextMargin"
+        android:text="- Team CU Pe Cake -"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/tsLarge"
+        android:layout_gravity="left"/>
+
+</LinearLayout>

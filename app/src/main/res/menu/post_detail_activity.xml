@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_post_bookmark"
+        android:icon="@drawable/ic_white_border_bookmark"
+        android:title="bookmark"
+        app:showAsAction="always" />
+    <item android:title="Main Menu"
+        android:id="@+id/action_none"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more">
+        <menu>
+            <item
+                android:id="@+id/action_post_edit"
+                android:icon="@drawable/ic_mod_edit"
+                app:showAsAction="withText"
+                android:title="Edit"/>
+            <item
+                android:id="@+id/action_post_delete"
+                android:icon="@drawable/ic_delete"
+                app:showAsAction="withText"
+                android:title="Delete" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<group-->
+        <!--android:id="@+id/menuTop"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/drawer_profile"-->
+            <!--android:icon="@drawable/ic_profile"-->
+            <!--android:title="Profile" />-->
+
+    <!--</group>-->
+    <group
+        android:id="@+id/menuMeddle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/action_myTopPost"
+            android:icon="@drawable/love_full_24"
+            android:title="Top Posts" />
+        <item
+            android:id="@+id/action_nav_bookmar"
+            android:icon="@drawable/ic_white_full_bookmark"
+            android:title="BookMarks" />
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_faq"
+            android:title="FAQs" />
+    </group>
+
+    <group
+        android:id="@+id/menuBottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log out" />
+    </group>
+</menu>

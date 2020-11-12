@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:theme="@style/AppThemeNoToolBar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:theme="@style/ToolBarStyle"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="5dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeOne"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@color/colorPrimary">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivCross"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:src="@drawable/ic_action_cross" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spUserChoice"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_toEndOf="@+id/ivCross"-->
+    <!--android:layout_toStartOf="@+id/tvPost"-->
+    <!--android:entries="@array/userChoice"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvPost"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:typeface="monospace"-->
+    <!--android:text="Post"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/tsExtraLarge" />-->
+    <!--</RelativeLayout>-->
+
+    <ScrollView
+
+        android:id="@+id/svPostCreate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/relativeTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#fff"
+                android:hint="ေခါင္းစဥ္"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="အေၾကာင္းအရာ"
+                android:minHeight="200dp"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/relativeThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvChooseCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:text="အမ်ိဳးအစားေရြးပါ"
+            android:textSize="@dimen/tsExtraLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tvTextCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="500"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivDeleteImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_action_cross"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+            android:src="@drawable/ic_action_img" />
+    </LinearLayout>
+
+</RelativeLayout>
